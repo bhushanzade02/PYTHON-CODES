@@ -1,0 +1,7 @@
+print("student id card")
+name=input("enter name")
+age=input("age")
+phno=input("enter you mobile no")
+print("student anme:",name)
+print("studnet age",age)
+print("student mobile no",phno)
