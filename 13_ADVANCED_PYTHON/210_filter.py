@@ -13,3 +13,5 @@ new_even = [i for i in numbers if i % 2 == 0]
 
 print(list(evens))
 print(new_even)
+print(new_even)
+
