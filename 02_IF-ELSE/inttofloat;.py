@@ -1,0 +1,8 @@
+a=int(input("enter a number"))
+print(a)
+print(type(a))
+a=float(a)
+print(a)
+print("after a coversuon",a)
+print(type(a))
+print("exit code succesfully")
