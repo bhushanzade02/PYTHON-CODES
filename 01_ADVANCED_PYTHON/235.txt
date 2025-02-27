@@ -1,0 +1,3 @@
+bhushan,100
+sarthak,100
+rahul,50
