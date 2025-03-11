@@ -3,3 +3,5 @@ with open('235.txt', 'r') as rf:
         for line in rf.readlines():
             name, salary = line.split(',')
             wf.write(f'{name}\'s salary is{salary}')
+    # this a code
+            
