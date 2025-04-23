@@ -17,7 +17,7 @@
 #     print("")
 
 
-
+# hell
 
 #  2. Sum of First N Natural Numbers
 
