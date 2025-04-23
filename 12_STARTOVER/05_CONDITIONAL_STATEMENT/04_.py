@@ -54,5 +54,5 @@
 
 # Also check if it’s even/odd
 
-number =int(input("Enter a NUmber"))
-if()
+# number =int(input("Enter a NUmber"))
+# if()
