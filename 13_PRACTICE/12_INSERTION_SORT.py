@@ -1,6 +1,7 @@
 nums = [1,2,7,1,9,3]
 
 
+
 def insertion_sort(arr):
     n= len(arr)
     for i in range(1,n):
