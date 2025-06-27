@@ -27,7 +27,6 @@ target = 3
 # print(binary_search(nums,target))
 
 
-
 # binary serach through recusrion:
 
 
