@@ -14,3 +14,5 @@ def insertion_sort(arr):
 print(insertion_sort(nums))
     
     
+    
+    

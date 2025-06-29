@@ -11,5 +11,4 @@ def productA(nums):
         for i in range(len(nums)):
             ans.append(product//nums[i])
         return ans
-
 print(productA(nums))

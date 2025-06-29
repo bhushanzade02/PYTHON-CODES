@@ -10,4 +10,3 @@
 #     return arr
         
 # print(selecton_sort(nums))
-

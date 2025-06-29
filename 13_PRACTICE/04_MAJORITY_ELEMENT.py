@@ -2,6 +2,7 @@ nums=(
     [3]*4+[2]*100
 )
 
+
 def majorityelement(nums):
     nums.sort()
     n=len(nums)

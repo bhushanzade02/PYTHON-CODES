@@ -1,6 +1,7 @@
 nums=[1,1,2,2,5,3,5]
 
 
+
 def single_num(nums):
     for i in range(len(nums)):
         count=0

@@ -23,7 +23,6 @@ target = 3
 
 #     return -1  # Target not found
 
-
 # print(binary_search(nums,target))
 
 

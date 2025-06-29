@@ -1,4 +1,5 @@
 nums=[34,2,-34,5,43]
+
 start=0
 end=len(nums)-1
 while(start<end):
