@@ -10,6 +10,7 @@ class Laptop:
         
 
 
+
 # Laptop.discount_percent=10
 lp1 = Laptop('Dell', 'inp 14', 63000)
 lp2 = Laptop('ACER', 'inp 15', 55000)

@@ -7,6 +7,7 @@ class Person:
         self.last_name = last_name
         self.age = age
         
+        
     @classmethod
     def from_string(cls, string):
         first, last, age = string.split(',')

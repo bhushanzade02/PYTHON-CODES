@@ -16,6 +16,7 @@ class C(A, B):
 
 
 
+
 instance_c = C()
 print(instance_c.class_a_method())
 print(instance_c.hello())

@@ -9,5 +9,7 @@ class Person:
 p1 = Person('bhushan', 'zade', 22)
 p2 = Person('sid', 'zade', 21)
 
+
+
 print(p1.first_name)
 print(p2.last_name)

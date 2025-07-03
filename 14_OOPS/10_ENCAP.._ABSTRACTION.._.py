@@ -13,6 +13,7 @@ class Phone:
 
 
 
+
 p1 = Phone("Apple", "Iphone", 10000)
 p2 = Phone("Redmi", "Note 9", 5000)
 

@@ -14,6 +14,7 @@ class Phone:
     def full_name(self):
         return f"{self.brand} {self.model_name}"
 
+
 phone1 = Phone('Redmi', 'note 9',1000)
 print(phone1.complete_specification) #<_______we dont use bracket() after function called we declare this as @poperty
 

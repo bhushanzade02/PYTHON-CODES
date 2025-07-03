@@ -11,6 +11,7 @@ class Phone:
         return f'calling {number}....'
 
 
+
 class Smartphone(Phone):
     def __init__(self, brand, model_name, price, ram, internal_memory, rear_camera):
         super().__init__( brand, model_name, price)
