@@ -7,7 +7,7 @@ def isPrime(num):
     return True
     
     
-    
+
     
     
 x = int(input("Enter a number to check Prime "))

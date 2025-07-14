@@ -14,6 +14,8 @@ def Prime_Generator(n):
         num+=1
     
     
+    
+    
 x = int(input("ENter a NUmber of prime Required "))
 it = Prime_Generator(x)
 
