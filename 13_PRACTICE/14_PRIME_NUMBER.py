@@ -4,4 +4,6 @@ def prime_number(x):
         if x %  i ==0:
             return print('not a prime number')
     return print('prime number')
+
+
 print(prime_number(n))
