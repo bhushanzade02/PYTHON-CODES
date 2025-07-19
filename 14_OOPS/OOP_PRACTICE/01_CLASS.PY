@@ -1,7 +1,5 @@
 class Dog:
     species = "Canien" # class Atrribute / class data member
-    
-    
     def __init__(self,name,age):
         self.name= name   #instance attribute / object data member
         self.age = age

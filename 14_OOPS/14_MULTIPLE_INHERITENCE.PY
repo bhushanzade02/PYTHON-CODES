@@ -10,7 +10,6 @@ class B:
     def hello(self):
         return 'hello from class B'
 
-
 class C(A, B):
     pass
 
