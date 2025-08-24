@@ -4,7 +4,7 @@
 # Student  : Bhushan Zade MS2421
 # Date     : 2025-08-24
 # Purpose  : Solves TSP using Simulated Annealing and plots results
-
+# Github   : https://github.com/bhushanzade02/PYTHON-CODES/tree/main/16_OPTIMIZATION_CONCEPTS
 
 """
 ====================================================================
@@ -12,7 +12,7 @@
 ====================================================================
 """
  
- 
+
 #******************************************************************
 
 import random
@@ -23,8 +23,8 @@ from geopy.geocoders import Nominatim
 import time
 
 
-
 #*******************************************************************
+
 
 def Distance(P1, P2):
     # Euclidean distance between two points 
@@ -42,13 +42,14 @@ def TotalDistance(P, seq):
     dist += Distance(P[seq[N - 1]], P[seq[0]])
     return dist
 
+
 #******************************************************************
 
 
 def readCities(PNames):
     # Read city names from file and geocode coordinates
     P = []
-    geolocator = Nominatim(user_agent="tsp_solver")
+    geolocator = Nominatim(user_agent="tsp_SA_solver")
 
     with open("India_cities.txt") as file:
         for line in file:
