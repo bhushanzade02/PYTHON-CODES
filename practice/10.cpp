@@ -12,10 +12,10 @@ int main()
     {
         cout << A[i] << endl;
         result = result + A[i];
- 
+
         cout << result << endl;
     }
 
     cout << result;
-    return 0 ;
+    return 0;
 }
