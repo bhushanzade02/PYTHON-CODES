@@ -12,7 +12,7 @@ int main()
     {
         cout << A[i] << endl;
         result = result + A[i];
-        int checker 
+ 
         cout << result << endl;
     }
 
