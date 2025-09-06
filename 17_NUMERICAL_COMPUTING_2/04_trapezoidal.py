@@ -8,6 +8,7 @@ def trapezoidal():
 
     h = (xn - x0) / n
 
+    
     all_terms = 0
     for i in range(1, n):
         xi = x0 + i * h
