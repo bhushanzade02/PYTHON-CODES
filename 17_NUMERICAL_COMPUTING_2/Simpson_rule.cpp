@@ -8,6 +8,7 @@ float y(float x)
 }
 
 
+
 int main()
 {
     float x0, xn, h, s;
