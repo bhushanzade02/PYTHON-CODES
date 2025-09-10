@@ -4,6 +4,7 @@
 #include<iostream>
 using namespace std;
 
+
 float y( float x)
 {
     return 1 / (1+x*x);
