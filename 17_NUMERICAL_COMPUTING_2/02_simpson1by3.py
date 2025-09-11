@@ -1,4 +1,6 @@
 
+"""_SIMPSON 1 / 3 RULE_"""
+
 def y(x):
         return 1 / (1 + x**2)
 

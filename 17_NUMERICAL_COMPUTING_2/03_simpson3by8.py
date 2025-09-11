@@ -1,9 +1,13 @@
+
+
+"""_SIMPSON 3 / 8 RULE_"""
+
 def y(x):
     return 1 / (1 + x**2)
 
 def simpson38():
 
-    n = int(input("Enter the on. of subintrval (multiple of 3): "))
+    n = int(input("Enter the on.of subinterval multiple of 3 : "))
     
     if n % 3 != 0:
         print("Error ")

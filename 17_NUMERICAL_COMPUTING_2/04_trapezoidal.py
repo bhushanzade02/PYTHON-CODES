@@ -1,3 +1,7 @@
+
+
+"""_TRAPEZOIDAL RULE_"""
+
 def y(x):
     return 1 / (1+x**2)
 
