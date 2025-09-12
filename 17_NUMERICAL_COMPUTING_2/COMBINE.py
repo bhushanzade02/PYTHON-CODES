@@ -1,5 +1,6 @@
-import sympy as sp
-import numpy as np
+# import sympy as sp
+# import numpy as np
+
 
 class Numerical_Integration:
     def __init__(self, func, a, b, n):
@@ -7,7 +8,6 @@ class Numerical_Integration:
         self.a = a
         self.b = b
         self.n = n
-        
         
     def trapezoidal(self):
         n = self.n
@@ -69,41 +69,23 @@ class Numerical_Integration:
     
 if __name__== "__main__":
     
-    x = sp.symbols('x')
-    exp_str = input("enter the function : ")
-    expr = sp.sympify(exp_str)
-    y = sp.lambdify(x, expr, "math")    
+    # x = sp.symbols('x')
+    # exp_str = input("enter the function : ")
+    # expr = sp.sympify(exp_str)
+    # y = sp.lambdify(x, expr, "math")    
     
-    
-    # y = lambda x : 1/(1 + x**2)
+    y = lambda x : 1/(1 + x**2)
      
     a = int(input("Enter Lower Limit a : "))
     b = int(input("Enter upper Limit b : "))
     n = int(input("Enter the number of Sub-Intervals n : "))
     
     num = Numerical_Integration(y, a ,b , n )
-    
-    print(expr)
-    
+ 
+    # print(expr)
+    print()
     print(num.trapezoidal())
     
     print(num.simpson13())
     
     print(num.simpson38())
-    
-                    
-        
-        
-        
-        
-        
-     
-
-# x = sp.symbols('x')
-# expr_str = input("Enter a function in terms of x (e.g. x**2, sin(x), exp(-x)): ")
-# expr = sp.sympify(expr_str)   # safely parse the expression
-
-# # convert to a callable function
-# y = sp.lambdify(x, expr, "math")
-
-# print("Test: y(2) =", y(2))

@@ -1,6 +1,9 @@
 
 """LAGRANGE INTERPOLATION"""
 
+def Newton_inerpolation(x):
+    return x
+
 def lagrange():
     Ax = []
     Ay = []
@@ -32,7 +35,5 @@ def lagrange():
         y += (nr/dr) * Ay[i]
 
     print(f"when x = {x} then y =  {y}")
-
-
 
 print(lagrange())
