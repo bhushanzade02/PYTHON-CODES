@@ -65,6 +65,9 @@ class Numerical_Integration:
             
             integral_value = ((3 * h)/8) * ( y(x0) + 3 * (non_mod_sum) + 2 * (mod3_sum) + y(xn) )
             return f"the aprroximate value of integral is : {integral_value:.5f} by simpson 3/8 rule"
+    
+    def Euler():
+        
                              
     
 if __name__== "__main__":
@@ -89,3 +92,5 @@ if __name__== "__main__":
     print(num.simpson13())
     
     print(num.simpson38())
+
+    print(num.Euler())
