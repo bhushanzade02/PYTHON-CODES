@@ -8,6 +8,7 @@ class DiffEquation:
         self.h = h
         self.x_end = x_end
 
+
     def euler(self, f):
         x = self.x0
         y = self.y0
@@ -22,6 +23,7 @@ class DiffEquation:
             print(f"{x:<10.4f}{y:<15.4f}")
 
         return y
+
 
     def mod_euler(self, f):
         x = self.x0

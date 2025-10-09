@@ -4,7 +4,7 @@ from func import call_function
 
 if __name__ == "__main__":
 
-    print("________Differential Equation Solver__________\n")
+    print("___Differential Equation Solver___\n")
 
     x0 = float(input(" x0: "))
     y0 = float(input(" y0: "))
