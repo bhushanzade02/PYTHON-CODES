@@ -90,4 +90,4 @@ if __name__ == "__main__":
     print(f"y({x}) = {mod_eul:.4f}\n\n")
 
     rk4 = de.rk4(f)
-    print(f"y({x}) = {rk4:.4f}")x` `
+    print(f"y({x}) = {rk4:.4f}")
