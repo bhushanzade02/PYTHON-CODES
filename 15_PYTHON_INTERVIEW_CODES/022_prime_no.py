@@ -1,3 +1,4 @@
+
 def isPrime(num):
     if num < 2 :
         return False
@@ -6,9 +7,7 @@ def isPrime(num):
             return False
     return True
     
-    
 
-    
     
 x = int(input("Enter a number to check Prime "))
 print(isPrime(x))
