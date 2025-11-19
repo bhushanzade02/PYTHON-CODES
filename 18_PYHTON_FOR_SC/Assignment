@@ -7,7 +7,7 @@
         "colab_type": "text"
       },
       "source": [
-        "<a href=\"https://colab.research.google.com/github/bhushanzade02/PYTHON-CODES/blob/main/18_PYHTON_FOR_SC/Assignment/py_for_sc.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+        "<a href=\"https://colab.research.google.com/github/bhushanzade02/PYTHON-CODES/blob/main/18_PYHTON_FOR_SC/Assignment\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
       ]
     },
     {
@@ -24,17 +24,30 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 5,
+      "execution_count": 4,
       "id": "c54e6789-bfcf-4a6f-aa54-ba73c47814d2",
       "metadata": {
         "id": "c54e6789-bfcf-4a6f-aa54-ba73c47814d2"
       },
       "outputs": [],
       "source": [
-        "df = pd.read_csv(r\"/books_dataset.csv\")\n",
-        "df_m= pd.read_csv(r\"/members_dataset.csv\")\n",
-        "df_t= pd.read_csv(r\"/transactions_dataset.csv\")"
+        "df = pd.read_csv(r\"books_dataset.csv\")\n",
+        "df_m= pd.read_csv(r\"members_dataset.csv\")\n",
+        "df_t= pd.read_csv(r\"transactions_dataset.csv\")"
       ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# from google.colab import drive\n",
+        "# drive.mount('/content/drive')"
+      ],
+      "metadata": {
+        "id": "hoNDbZHrEd9J"
+      },
+      "id": "hoNDbZHrEd9J",
+      "execution_count": 5,
+      "outputs": []
     },
     {
       "cell_type": "code",
@@ -46,7 +59,7 @@
           "height": 206
         },
         "id": "df52acb8-2142-48e7-a568-be2996b2b738",
-        "outputId": "50792f74-67a6-4cd3-83db-d85d29f03579"
+        "outputId": "90f894bb-babf-4236-e35d-09c9ff0c8860"
       },
       "outputs": [
         {
@@ -69,7 +82,7 @@
             ],
             "text/html": [
               "\n",
-              "  <div id=\"df-5550402a-f6e7-45f2-b984-559fc276d276\" class=\"colab-df-container\">\n",
+              "  <div id=\"df-bee40532-7cf3-4352-8bef-acc36d450db3\" class=\"colab-df-container\">\n",
               "    <div>\n",
               "<style scoped>\n",
               "    .dataframe tbody tr th:only-of-type {\n",
@@ -142,7 +155,7 @@
               "    <div class=\"colab-df-buttons\">\n",
               "\n",
               "  <div class=\"colab-df-container\">\n",
-              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-5550402a-f6e7-45f2-b984-559fc276d276')\"\n",
+              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-bee40532-7cf3-4352-8bef-acc36d450db3')\"\n",
               "            title=\"Convert this dataframe to an interactive table.\"\n",
               "            style=\"display:none;\">\n",
               "\n",
@@ -194,12 +207,12 @@
               "\n",
               "    <script>\n",
               "      const buttonEl =\n",
-              "        document.querySelector('#df-5550402a-f6e7-45f2-b984-559fc276d276 button.colab-df-convert');\n",
+              "        document.querySelector('#df-bee40532-7cf3-4352-8bef-acc36d450db3 button.colab-df-convert');\n",
               "      buttonEl.style.display =\n",
               "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "\n",
               "      async function convertToInteractive(key) {\n",
-              "        const element = document.querySelector('#df-5550402a-f6e7-45f2-b984-559fc276d276');\n",
+              "        const element = document.querySelector('#df-bee40532-7cf3-4352-8bef-acc36d450db3');\n",
               "        const dataTable =\n",
               "          await google.colab.kernel.invokeFunction('convertToInteractive',\n",
               "                                                    [key], {});\n",
@@ -219,8 +232,8 @@
               "  </div>\n",
               "\n",
               "\n",
-              "    <div id=\"df-14f70bb6-0a67-48f2-b72f-387751ff2d45\">\n",
-              "      <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-14f70bb6-0a67-48f2-b72f-387751ff2d45')\"\n",
+              "    <div id=\"df-12b0d5dd-ec8a-42df-98f2-60c8a542eb1c\">\n",
+              "      <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-12b0d5dd-ec8a-42df-98f2-60c8a542eb1c')\"\n",
               "                title=\"Suggest charts\"\n",
               "                style=\"display:none;\">\n",
               "\n",
@@ -339,7 +352,7 @@
               "        }\n",
               "        (() => {\n",
               "          let quickchartButtonEl =\n",
-              "            document.querySelector('#df-14f70bb6-0a67-48f2-b72f-387751ff2d45 button');\n",
+              "            document.querySelector('#df-12b0d5dd-ec8a-42df-98f2-60c8a542eb1c button');\n",
               "          quickchartButtonEl.style.display =\n",
               "            google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "        })();\n",
@@ -392,7 +405,7 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "1c37d8b4-fb75-49c8-8a98-18a262a0e02b",
-        "outputId": "fa5b8ec3-bf8b-4b97-93ef-a2b6d105c96d"
+        "outputId": "0fa9756f-0c9c-4dec-9493-bc0466c804b3"
       },
       "outputs": [
         {
@@ -524,7 +537,7 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "712b2baa-d3f6-4639-8f3c-608115a3be9c",
-        "outputId": "989c83b5-8cfb-4463-cef8-9d43744fbf97"
+        "outputId": "abd67652-5275-4526-a117-5a3d7c18ccf3"
       },
       "outputs": [
         {
@@ -646,7 +659,7 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "9875f81a-26fb-4c7b-9fd3-14b46126623c",
-        "outputId": "5aeceb24-c4e8-4a0a-bc6b-904212ab7999"
+        "outputId": "e5df9603-8f8b-4ca3-b25c-a5c98394aba5"
       },
       "outputs": [
         {
@@ -759,7 +772,7 @@
     {
       "cell_type": "markdown",
       "source": [
-        "# ** Question  1** **bold text**"
+        "# **Question 1**"
       ],
       "metadata": {
         "id": "Y6qGSADZ1Mh-"
@@ -803,7 +816,7 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "3517c89f-2121-4bb0-a9c8-a6d1a0a5b406",
-        "outputId": "f0e3f4da-c433-4d3a-a5ba-c111dc2a6d6a"
+        "outputId": "9dddf9ea-3e76-44b7-f201-814b7ab7f188"
       },
       "outputs": [
         {
@@ -832,7 +845,7 @@
           "height": 206
         },
         "id": "c513ffd0-1dd0-4f96-804b-d090c58632b9",
-        "outputId": "53473212-f448-4989-ba5a-266ccf620541"
+        "outputId": "5ba62781-bc12-4b2f-8827-d60a16da82cb"
       },
       "outputs": [
         {
@@ -848,7 +861,7 @@
             ],
             "text/html": [
               "\n",
-              "  <div id=\"df-e14d1099-b689-4728-b12b-370413776bd9\" class=\"colab-df-container\">\n",
+              "  <div id=\"df-ae5f0a15-e313-4da5-8256-91a4fcc78d6d\" class=\"colab-df-container\">\n",
               "    <div>\n",
               "<style scoped>\n",
               "    .dataframe tbody tr th:only-of-type {\n",
@@ -915,7 +928,7 @@
               "    <div class=\"colab-df-buttons\">\n",
               "\n",
               "  <div class=\"colab-df-container\">\n",
-              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-e14d1099-b689-4728-b12b-370413776bd9')\"\n",
+              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-ae5f0a15-e313-4da5-8256-91a4fcc78d6d')\"\n",
               "            title=\"Convert this dataframe to an interactive table.\"\n",
               "            style=\"display:none;\">\n",
               "\n",
@@ -967,12 +980,12 @@
               "\n",
               "    <script>\n",
               "      const buttonEl =\n",
-              "        document.querySelector('#df-e14d1099-b689-4728-b12b-370413776bd9 button.colab-df-convert');\n",
+              "        document.querySelector('#df-ae5f0a15-e313-4da5-8256-91a4fcc78d6d button.colab-df-convert');\n",
               "      buttonEl.style.display =\n",
               "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "\n",
               "      async function convertToInteractive(key) {\n",
-              "        const element = document.querySelector('#df-e14d1099-b689-4728-b12b-370413776bd9');\n",
+              "        const element = document.querySelector('#df-ae5f0a15-e313-4da5-8256-91a4fcc78d6d');\n",
               "        const dataTable =\n",
               "          await google.colab.kernel.invokeFunction('convertToInteractive',\n",
               "                                                    [key], {});\n",
@@ -992,8 +1005,8 @@
               "  </div>\n",
               "\n",
               "\n",
-              "    <div id=\"df-e29186fc-3472-4516-a476-96d07cb8df12\">\n",
-              "      <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-e29186fc-3472-4516-a476-96d07cb8df12')\"\n",
+              "    <div id=\"df-3bbd6986-85bb-4e15-bc28-59231fcf4f16\">\n",
+              "      <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-3bbd6986-85bb-4e15-bc28-59231fcf4f16')\"\n",
               "                title=\"Suggest charts\"\n",
               "                style=\"display:none;\">\n",
               "\n",
@@ -1112,7 +1125,7 @@
               "        }\n",
               "        (() => {\n",
               "          let quickchartButtonEl =\n",
-              "            document.querySelector('#df-e29186fc-3472-4516-a476-96d07cb8df12 button');\n",
+              "            document.querySelector('#df-3bbd6986-85bb-4e15-bc28-59231fcf4f16 button');\n",
               "          quickchartButtonEl.style.display =\n",
               "            google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "        })();\n",
@@ -1158,7 +1171,7 @@
           "height": 423
         },
         "id": "59b30dd4-f238-434b-86b3-33ceb0deca0d",
-        "outputId": "7a2a8382-dba6-475a-dde5-584d4a64c1f5"
+        "outputId": "5bd7db7f-5095-4270-80ff-3f6093a5033b"
       },
       "outputs": [
         {
@@ -1182,7 +1195,7 @@
             ],
             "text/html": [
               "\n",
-              "  <div id=\"df-31720901-78cb-4998-b505-13e14d531812\" class=\"colab-df-container\">\n",
+              "  <div id=\"df-a7a9067d-d01b-4bc2-8763-e6c55886c0d9\" class=\"colab-df-container\">\n",
               "    <div>\n",
               "<style scoped>\n",
               "    .dataframe tbody tr th:only-of-type {\n",
@@ -1268,7 +1281,7 @@
               "    <div class=\"colab-df-buttons\">\n",
               "\n",
               "  <div class=\"colab-df-container\">\n",
-              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-31720901-78cb-4998-b505-13e14d531812')\"\n",
+              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-a7a9067d-d01b-4bc2-8763-e6c55886c0d9')\"\n",
               "            title=\"Convert this dataframe to an interactive table.\"\n",
               "            style=\"display:none;\">\n",
               "\n",
@@ -1320,12 +1333,12 @@
               "\n",
               "    <script>\n",
               "      const buttonEl =\n",
-              "        document.querySelector('#df-31720901-78cb-4998-b505-13e14d531812 button.colab-df-convert');\n",
+              "        document.querySelector('#df-a7a9067d-d01b-4bc2-8763-e6c55886c0d9 button.colab-df-convert');\n",
               "      buttonEl.style.display =\n",
               "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "\n",
               "      async function convertToInteractive(key) {\n",
-              "        const element = document.querySelector('#df-31720901-78cb-4998-b505-13e14d531812');\n",
+              "        const element = document.querySelector('#df-a7a9067d-d01b-4bc2-8763-e6c55886c0d9');\n",
               "        const dataTable =\n",
               "          await google.colab.kernel.invokeFunction('convertToInteractive',\n",
               "                                                    [key], {});\n",
@@ -1345,8 +1358,8 @@
               "  </div>\n",
               "\n",
               "\n",
-              "    <div id=\"df-7f161a6e-605e-4a8a-a6f4-19c1ad719e77\">\n",
-              "      <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-7f161a6e-605e-4a8a-a6f4-19c1ad719e77')\"\n",
+              "    <div id=\"df-a600ab28-c3e6-4853-b63a-de877ba16a76\">\n",
+              "      <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-a600ab28-c3e6-4853-b63a-de877ba16a76')\"\n",
               "                title=\"Suggest charts\"\n",
               "                style=\"display:none;\">\n",
               "\n",
@@ -1465,14 +1478,14 @@
               "        }\n",
               "        (() => {\n",
               "          let quickchartButtonEl =\n",
-              "            document.querySelector('#df-7f161a6e-605e-4a8a-a6f4-19c1ad719e77 button');\n",
+              "            document.querySelector('#df-a600ab28-c3e6-4853-b63a-de877ba16a76 button');\n",
               "          quickchartButtonEl.style.display =\n",
               "            google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "        })();\n",
               "      </script>\n",
               "    </div>\n",
               "\n",
-              "  <div id=\"id_01e034b5-d0e4-4d02-83f0-fd84279bde4d\">\n",
+              "  <div id=\"id_cecf62a2-e50a-484f-a8eb-c6fd837eb9bd\">\n",
               "    <style>\n",
               "      .colab-df-generate {\n",
               "        background-color: #E8F0FE;\n",
@@ -1516,7 +1529,7 @@
               "    <script>\n",
               "      (() => {\n",
               "      const buttonEl =\n",
-              "        document.querySelector('#id_01e034b5-d0e4-4d02-83f0-fd84279bde4d button.colab-df-generate');\n",
+              "        document.querySelector('#id_cecf62a2-e50a-484f-a8eb-c6fd837eb9bd button.colab-df-generate');\n",
               "      buttonEl.style.display =\n",
               "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "\n",
@@ -1567,7 +1580,7 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "f14049a1-0682-44fc-95ac-4820e4e42063",
-        "outputId": "9cb34a4e-4db7-4e51-aa93-bb3421374713"
+        "outputId": "11c622fc-d138-415e-b77e-82bdc9aa4191"
       },
       "outputs": [
         {
@@ -1631,7 +1644,7 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "f8d7fac1-45d9-45d8-8c20-baad9aa47450",
-        "outputId": "13d54da9-1fca-4fca-825f-495787864060"
+        "outputId": "de279c35-254c-4f53-ae20-4507a4d524ef"
       },
       "outputs": [
         {
@@ -1699,7 +1712,7 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "c7b1f752-283d-497c-bbdd-e95f9627066d",
-        "outputId": "8616bf77-7bfc-48bd-ed1e-ab63e37495e4"
+        "outputId": "60d8e201-c1f8-410c-f799-5690f48b5f64"
       },
       "outputs": [
         {
@@ -1738,7 +1751,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 20,
+      "execution_count": 19,
       "id": "f253d9c6-8d26-4e18-97ca-55f7563c7726",
       "metadata": {
         "id": "f253d9c6-8d26-4e18-97ca-55f7563c7726"
@@ -1758,14 +1771,14 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 31,
+      "execution_count": 20,
       "id": "c57dae74-2011-4a26-8de8-61fe6ab5782c",
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
         "id": "c57dae74-2011-4a26-8de8-61fe6ab5782c",
-        "outputId": "200973b3-bb9f-4a2c-8c07-5c1042c51920"
+        "outputId": "2f6c70d5-b27a-4a4c-b0e3-c4e832c81445"
       },
       "outputs": [
         {
@@ -1795,7 +1808,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 25,
+      "execution_count": 21,
       "id": "17ecd7e8-f5a6-4650-9ce3-4c8fa5a30b64",
       "metadata": {
         "colab": {
@@ -1803,7 +1816,7 @@
           "height": 206
         },
         "id": "17ecd7e8-f5a6-4650-9ce3-4c8fa5a30b64",
-        "outputId": "505f7559-62d4-4b83-b7be-6eb92ace8725"
+        "outputId": "788281c8-99ff-41c9-a5ae-79008bf5e4f5"
       },
       "outputs": [
         {
@@ -1826,7 +1839,7 @@
             ],
             "text/html": [
               "\n",
-              "  <div id=\"df-7192d0d3-37e8-46f5-a4cf-f18c0684391e\" class=\"colab-df-container\">\n",
+              "  <div id=\"df-ba24e607-4c84-43ee-8eb2-765ecb5758de\" class=\"colab-df-container\">\n",
               "    <div>\n",
               "<style scoped>\n",
               "    .dataframe tbody tr th:only-of-type {\n",
@@ -1899,7 +1912,7 @@
               "    <div class=\"colab-df-buttons\">\n",
               "\n",
               "  <div class=\"colab-df-container\">\n",
-              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-7192d0d3-37e8-46f5-a4cf-f18c0684391e')\"\n",
+              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-ba24e607-4c84-43ee-8eb2-765ecb5758de')\"\n",
               "            title=\"Convert this dataframe to an interactive table.\"\n",
               "            style=\"display:none;\">\n",
               "\n",
@@ -1951,12 +1964,12 @@
               "\n",
               "    <script>\n",
               "      const buttonEl =\n",
-              "        document.querySelector('#df-7192d0d3-37e8-46f5-a4cf-f18c0684391e button.colab-df-convert');\n",
+              "        document.querySelector('#df-ba24e607-4c84-43ee-8eb2-765ecb5758de button.colab-df-convert');\n",
               "      buttonEl.style.display =\n",
               "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "\n",
               "      async function convertToInteractive(key) {\n",
-              "        const element = document.querySelector('#df-7192d0d3-37e8-46f5-a4cf-f18c0684391e');\n",
+              "        const element = document.querySelector('#df-ba24e607-4c84-43ee-8eb2-765ecb5758de');\n",
               "        const dataTable =\n",
               "          await google.colab.kernel.invokeFunction('convertToInteractive',\n",
               "                                                    [key], {});\n",
@@ -1976,8 +1989,8 @@
               "  </div>\n",
               "\n",
               "\n",
-              "    <div id=\"df-7744032b-64ad-4d1f-8664-b19e5f842805\">\n",
-              "      <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-7744032b-64ad-4d1f-8664-b19e5f842805')\"\n",
+              "    <div id=\"df-8e1c1f76-449e-4713-9759-ff552d80f3eb\">\n",
+              "      <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-8e1c1f76-449e-4713-9759-ff552d80f3eb')\"\n",
               "                title=\"Suggest charts\"\n",
               "                style=\"display:none;\">\n",
               "\n",
@@ -2096,7 +2109,7 @@
               "        }\n",
               "        (() => {\n",
               "          let quickchartButtonEl =\n",
-              "            document.querySelector('#df-7744032b-64ad-4d1f-8664-b19e5f842805 button');\n",
+              "            document.querySelector('#df-8e1c1f76-449e-4713-9759-ff552d80f3eb button');\n",
               "          quickchartButtonEl.style.display =\n",
               "            google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "        })();\n",
@@ -2113,7 +2126,7 @@
             }
           },
           "metadata": {},
-          "execution_count": 25
+          "execution_count": 21
         }
       ],
       "source": [
@@ -2122,7 +2135,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 39,
+      "execution_count": 22,
       "id": "8da21500-b0d0-413b-8939-23ce29f67b63",
       "metadata": {
         "id": "8da21500-b0d0-413b-8939-23ce29f67b63"
@@ -2146,10 +2159,10 @@
           "height": 423
         },
         "id": "MiORTsmbrwqR",
-        "outputId": "cf34667c-73ff-46ac-fc5e-c017d1a1cbaf"
+        "outputId": "2b2e0565-757f-43f0-f0c9-173550796329"
       },
       "id": "MiORTsmbrwqR",
-      "execution_count": 37,
+      "execution_count": 23,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -2185,7 +2198,7 @@
             ],
             "text/html": [
               "\n",
-              "  <div id=\"df-117298bc-d845-4ab5-b881-f23684bb93eb\" class=\"colab-df-container\">\n",
+              "  <div id=\"df-805f33cf-8b83-43eb-9407-4669fdc3a41d\" class=\"colab-df-container\">\n",
               "    <div>\n",
               "<style scoped>\n",
               "    .dataframe tbody tr th:only-of-type {\n",
@@ -2319,7 +2332,7 @@
               "    <div class=\"colab-df-buttons\">\n",
               "\n",
               "  <div class=\"colab-df-container\">\n",
-              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-117298bc-d845-4ab5-b881-f23684bb93eb')\"\n",
+              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-805f33cf-8b83-43eb-9407-4669fdc3a41d')\"\n",
               "            title=\"Convert this dataframe to an interactive table.\"\n",
               "            style=\"display:none;\">\n",
               "\n",
@@ -2371,12 +2384,12 @@
               "\n",
               "    <script>\n",
               "      const buttonEl =\n",
-              "        document.querySelector('#df-117298bc-d845-4ab5-b881-f23684bb93eb button.colab-df-convert');\n",
+              "        document.querySelector('#df-805f33cf-8b83-43eb-9407-4669fdc3a41d button.colab-df-convert');\n",
               "      buttonEl.style.display =\n",
               "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "\n",
               "      async function convertToInteractive(key) {\n",
-              "        const element = document.querySelector('#df-117298bc-d845-4ab5-b881-f23684bb93eb');\n",
+              "        const element = document.querySelector('#df-805f33cf-8b83-43eb-9407-4669fdc3a41d');\n",
               "        const dataTable =\n",
               "          await google.colab.kernel.invokeFunction('convertToInteractive',\n",
               "                                                    [key], {});\n",
@@ -2396,8 +2409,8 @@
               "  </div>\n",
               "\n",
               "\n",
-              "    <div id=\"df-416ffdfc-7619-4d27-aa28-43de8035f935\">\n",
-              "      <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-416ffdfc-7619-4d27-aa28-43de8035f935')\"\n",
+              "    <div id=\"df-025fd4f3-7499-4e6b-8304-edc15987b713\">\n",
+              "      <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-025fd4f3-7499-4e6b-8304-edc15987b713')\"\n",
               "                title=\"Suggest charts\"\n",
               "                style=\"display:none;\">\n",
               "\n",
@@ -2516,14 +2529,14 @@
               "        }\n",
               "        (() => {\n",
               "          let quickchartButtonEl =\n",
-              "            document.querySelector('#df-416ffdfc-7619-4d27-aa28-43de8035f935 button');\n",
+              "            document.querySelector('#df-025fd4f3-7499-4e6b-8304-edc15987b713 button');\n",
               "          quickchartButtonEl.style.display =\n",
               "            google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "        })();\n",
               "      </script>\n",
               "    </div>\n",
               "\n",
-              "  <div id=\"id_f0c9c2f9-7a23-4d90-ab1b-e97b6b4df77b\">\n",
+              "  <div id=\"id_550bc725-2d41-4e1f-8085-611979e26d05\">\n",
               "    <style>\n",
               "      .colab-df-generate {\n",
               "        background-color: #E8F0FE;\n",
@@ -2567,7 +2580,7 @@
               "    <script>\n",
               "      (() => {\n",
               "      const buttonEl =\n",
-              "        document.querySelector('#id_f0c9c2f9-7a23-4d90-ab1b-e97b6b4df77b button.colab-df-generate');\n",
+              "        document.querySelector('#id_550bc725-2d41-4e1f-8085-611979e26d05 button.colab-df-generate');\n",
               "      buttonEl.style.display =\n",
               "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "\n",
@@ -2588,7 +2601,7 @@
             }
           },
           "metadata": {},
-          "execution_count": 37
+          "execution_count": 23
         }
       ]
     },
@@ -2602,10 +2615,10 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "oinZfuGzuD5K",
-        "outputId": "5384096c-eb1a-4445-de12-fec4a4f1f3b0"
+        "outputId": "aca71e2a-4a8d-433f-a941-c942362bf2e4"
       },
       "id": "oinZfuGzuD5K",
-      "execution_count": 40,
+      "execution_count": 24,
       "outputs": [
         {
           "output_type": "stream",
@@ -2631,8 +2644,16 @@
         "id": "yxNaqMV4wUU6"
       },
       "id": "yxNaqMV4wUU6",
-      "execution_count": 41,
+      "execution_count": 25,
       "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "lYnIoJoi2OjK"
+      },
+      "id": "lYnIoJoi2OjK"
     },
     {
       "cell_type": "code",
@@ -2646,7 +2667,7 @@
         "id": "tP1DGQ9CwmC0"
       },
       "id": "tP1DGQ9CwmC0",
-      "execution_count": 42,
+      "execution_count": 26,
       "outputs": []
     },
     {
@@ -2659,10 +2680,10 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "DGv2bo8BxRKy",
-        "outputId": "f10c81ec-eb7b-4e2b-91f2-470c4a20ef65"
+        "outputId": "69f1255d-c590-4a8c-965e-08a237d71e4f"
       },
       "id": "DGv2bo8BxRKy",
-      "execution_count": 43,
+      "execution_count": 27,
       "outputs": [
         {
           "output_type": "stream",
@@ -2706,7 +2727,7 @@
         "id": "jU5z65URxUCQ"
       },
       "id": "jU5z65URxUCQ",
-      "execution_count": 51,
+      "execution_count": 28,
       "outputs": []
     },
     {
@@ -2716,7 +2737,7 @@
         "id": "RgFjOzbFyd6o"
       },
       "id": "RgFjOzbFyd6o",
-      "execution_count": 51,
+      "execution_count": 28,
       "outputs": []
     },
     {
@@ -2728,7 +2749,7 @@
         "id": "04yAP83Szo3C"
       },
       "id": "04yAP83Szo3C",
-      "execution_count": 52,
+      "execution_count": 29,
       "outputs": []
     },
     {
@@ -2743,10 +2764,10 @@
           "height": 833
         },
         "id": "xWtnUJbS0snA",
-        "outputId": "d11743e1-f5a4-4875-b94a-d5cf9982e986"
+        "outputId": "842d196f-a421-48f4-d29c-73836def16b6"
       },
       "id": "xWtnUJbS0snA",
-      "execution_count": 53,
+      "execution_count": 30,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -2781,7 +2802,7 @@
             ],
             "text/html": [
               "\n",
-              "  <div id=\"df-d498b00c-036d-4f8a-b9ba-fd84951a9553\" class=\"colab-df-container\">\n",
+              "  <div id=\"df-1dab4e2b-e764-46f3-80b5-c117aec7fae1\" class=\"colab-df-container\">\n",
               "    <div>\n",
               "<style scoped>\n",
               "    .dataframe tbody tr th:only-of-type {\n",
@@ -2962,7 +2983,7 @@
               "    <div class=\"colab-df-buttons\">\n",
               "\n",
               "  <div class=\"colab-df-container\">\n",
-              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-d498b00c-036d-4f8a-b9ba-fd84951a9553')\"\n",
+              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-1dab4e2b-e764-46f3-80b5-c117aec7fae1')\"\n",
               "            title=\"Convert this dataframe to an interactive table.\"\n",
               "            style=\"display:none;\">\n",
               "\n",
@@ -3014,12 +3035,12 @@
               "\n",
               "    <script>\n",
               "      const buttonEl =\n",
-              "        document.querySelector('#df-d498b00c-036d-4f8a-b9ba-fd84951a9553 button.colab-df-convert');\n",
+              "        document.querySelector('#df-1dab4e2b-e764-46f3-80b5-c117aec7fae1 button.colab-df-convert');\n",
               "      buttonEl.style.display =\n",
               "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "\n",
               "      async function convertToInteractive(key) {\n",
-              "        const element = document.querySelector('#df-d498b00c-036d-4f8a-b9ba-fd84951a9553');\n",
+              "        const element = document.querySelector('#df-1dab4e2b-e764-46f3-80b5-c117aec7fae1');\n",
               "        const dataTable =\n",
               "          await google.colab.kernel.invokeFunction('convertToInteractive',\n",
               "                                                    [key], {});\n",
@@ -3039,8 +3060,8 @@
               "  </div>\n",
               "\n",
               "\n",
-              "    <div id=\"df-5a1ab518-a766-4887-882c-ad6d11ce2f6d\">\n",
-              "      <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-5a1ab518-a766-4887-882c-ad6d11ce2f6d')\"\n",
+              "    <div id=\"df-8ca7d288-3f28-451d-a6fa-fa0eb26505cc\">\n",
+              "      <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-8ca7d288-3f28-451d-a6fa-fa0eb26505cc')\"\n",
               "                title=\"Suggest charts\"\n",
               "                style=\"display:none;\">\n",
               "\n",
@@ -3159,14 +3180,14 @@
               "        }\n",
               "        (() => {\n",
               "          let quickchartButtonEl =\n",
-              "            document.querySelector('#df-5a1ab518-a766-4887-882c-ad6d11ce2f6d button');\n",
+              "            document.querySelector('#df-8ca7d288-3f28-451d-a6fa-fa0eb26505cc button');\n",
               "          quickchartButtonEl.style.display =\n",
               "            google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "        })();\n",
               "      </script>\n",
               "    </div>\n",
               "\n",
-              "  <div id=\"id_63ea2195-04ee-423c-be32-0a1171d5b7ec\">\n",
+              "  <div id=\"id_5c8b206a-56a0-4638-a5fc-cf45109d741e\">\n",
               "    <style>\n",
               "      .colab-df-generate {\n",
               "        background-color: #E8F0FE;\n",
@@ -3210,7 +3231,7 @@
               "    <script>\n",
               "      (() => {\n",
               "      const buttonEl =\n",
-              "        document.querySelector('#id_63ea2195-04ee-423c-be32-0a1171d5b7ec button.colab-df-generate');\n",
+              "        document.querySelector('#id_5c8b206a-56a0-4638-a5fc-cf45109d741e button.colab-df-generate');\n",
               "      buttonEl.style.display =\n",
               "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "\n",
@@ -3231,7 +3252,7 @@
             }
           },
           "metadata": {},
-          "execution_count": 53
+          "execution_count": 30
         }
       ]
     },
@@ -3242,8 +3263,1716 @@
         "id": "Y9lJX33h06td"
       },
       "id": "Y9lJX33h06td",
+      "execution_count": 30,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Que 2 Member usage patterns  *key patterns to discover*"
+      ],
+      "metadata": {
+        "id": "DVifvafD2Pyo"
+      },
+      "id": "DVifvafD2Pyo"
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Merge transactions with member details to get membership type\n",
+        "merged = df_t.merge(df_m[['Member_ID', 'Membership_Type']], on='Member_ID', how='left')\n",
+        "\n",
+        "# Count how many borrows per membership type\n",
+        "membership_usage = (\n",
+        "    merged.groupby('Membership_Type')\n",
+        "          .size()\n",
+        "          .reset_index(name='Borrow_Count')\n",
+        "          .sort_values(by='Borrow_Count', ascending=False)\n",
+        ")\n",
+        "\n",
+        "print(membership_usage)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "h5MYn3iL2YJu",
+        "outputId": "e52af2b9-3c3c-4773-fbdd-2825b977cdc2"
+      },
+      "id": "h5MYn3iL2YJu",
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "  Membership_Type  Borrow_Count\n",
+            "2         Regular          2412\n",
+            "4         Student          2197\n",
+            "1         Premium          1580\n",
+            "0         Faculty           324\n",
+            "3          Senior           174\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import pandas as pd\n",
+        "\n",
+        "merged = df_t.merge(df_m[['Member_ID', 'Age']], on='Member_ID', how='left')\n",
+        "\n",
+        "labels = ['Teens (16-19)', 'Young Adults (20-29)', 'Adults (30-49)', 'Middle-aged (50-64)', 'Seniors (65+)']\n",
+        "\n",
+        "merged['Age_Group'] = pd.cut(merged['Age'], bins=bins, labels=labels, right=True)\n",
+        "\n",
+        "age_group_usage = (\n",
+        "    merged.groupby('Age_Group')\n",
+        "          .size()\n",
+        "          .reset_index(name='Borrow_Count')\n",
+        "          .sort_values(by='Borrow_Count', ascending=False)\n",
+        ")\n",
+        "\n",
+        "print(age_group_usage)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 222
+        },
+        "id": "6lgSxLal6zj_",
+        "outputId": "a9148673-df81-4ed4-b781-91d12d3fc7f2"
+      },
+      "id": "6lgSxLal6zj_",
+      "execution_count": 32,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "name 'bins' is not defined",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipython-input-3541973649.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[0mlabels\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m[\u001b[0m\u001b[0;34m'Teens (16-19)'\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m'Young Adults (20-29)'\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m'Adults (30-49)'\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m'Middle-aged (50-64)'\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m'Seniors (65+)'\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      6\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 7\u001b[0;31m \u001b[0mmerged\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m'Age_Group'\u001b[0m\u001b[0;34m]\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mpd\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mcut\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mmerged\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m'Age'\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mbins\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mbins\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mlabels\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mlabels\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mright\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;32mTrue\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      8\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      9\u001b[0m age_group_usage = (\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'bins' is not defined"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Are there seasonal borrowing patterns?"
+      ],
+      "metadata": {
+        "id": "nm52OnmoGo8V"
+      },
+      "id": "nm52OnmoGo8V"
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(df_t.columns)"
+      ],
+      "metadata": {
+        "id": "ZuzRaH_K95XN"
+      },
+      "id": "ZuzRaH_K95XN",
       "execution_count": null,
       "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Extract the month from Checkout_Date\n",
+        "df_t['Checkout_Date'] = pd.to_datetime(df_t[\"Checkout_Date\"])"
+      ],
+      "metadata": {
+        "id": "RtGCkTVvGiKa"
+      },
+      "id": "RtGCkTVvGiKa",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "df_t"
+      ],
+      "metadata": {
+        "id": "_Xb27lqkHupR"
+      },
+      "id": "_Xb27lqkHupR",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "df_t[\"Month\"] = df_t['Checkout_Date'].dt.month"
+      ],
+      "metadata": {
+        "id": "xwd4FD9eH2bR"
+      },
+      "id": "xwd4FD9eH2bR",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "85Da7Xe1IB1C"
+      },
+      "id": "85Da7Xe1IB1C",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "df_t"
+      ],
+      "metadata": {
+        "id": "0msap5GXJVUV"
+      },
+      "id": "0msap5GXJVUV",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# coutn no of borrows in each month\n",
+        "#Logic:\n",
+        "#Group by Month\n",
+        "#Count number of Book_IDs borrowed\n",
+        "\n",
+        "monthly_counts = df_t.groupby(\"Month\")[\"Book_ID\"].count\n"
+      ],
+      "metadata": {
+        "id": "dAbSUsP2IE6T"
+      },
+      "id": "dAbSUsP2IE6T",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# conver this month inyo seasons\n",
+        "\n",
+        "\n",
+        "\"\"\" Logic:\n",
+        "Define seasons (example for India):\n",
+        "\n",
+        "Winter: Dec–Feb (12, 1, 2)\n",
+        "\n",
+        "Summer: Mar–May (3, 4, 5)\n",
+        "\n",
+        "Monsoon: Jun–Aug (6, 7, 8)\n",
+        "\n",
+        "Autumn: Sep–Nov (9, 10, 11)\"\"\"\n",
+        "\n",
+        "\n",
+        "\n",
+        "def get_season(m):\n",
+        "  if m in [12 , 1 , 2 ] : return \"winter\"\n",
+        "  elif m in [3, 4, 5] : return \"summer\"\n",
+        "  elif m in [6, 7, 8] : return \"Monsoon\"\n",
+        "  elif m in [9, 10, 11] : return \"Autumn\"\n",
+        "\n",
+        "\n",
+        "\n",
+        "df_t[\"season\"] = df_t[\"Month\"].apply(get_season)"
+      ],
+      "metadata": {
+        "id": "keV2x4uyJKcK"
+      },
+      "id": "keV2x4uyJKcK",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "df_t"
+      ],
+      "metadata": {
+        "id": "LkHysmMWKSCg"
+      },
+      "id": "LkHysmMWKSCg",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\"\"\"  Count borrows by season\n",
+        "\n",
+        "Logic:\n",
+        "\n",
+        "Group by the newly created Season column\n",
+        "\n",
+        "Check which season has most borrowing activity\"\"\"\n",
+        "\n",
+        "\n",
+        "\n",
+        "seasonal_count = df_t.groupby(\"season\")[\"Book_ID\"].count()"
+      ],
+      "metadata": {
+        "id": "_EA-nszhKS0Q"
+      },
+      "id": "_EA-nszhKS0Q",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(seasonal_count)"
+      ],
+      "metadata": {
+        "id": "RNiYRf8jK05z"
+      },
+      "id": "RNiYRf8jK05z",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# who are the most active vs inactive members?"
+      ],
+      "metadata": {
+        "id": "kZR5nuT_MFUV"
+      },
+      "id": "kZR5nuT_MFUV"
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\"\"\" Count number of borrows for each Member_ID\n",
+        "\n",
+        "Logic:\n",
+        "A member who borrowed more books is more active.\n",
+        "A member who borrowed fewer (or zero) books is inactive.\n",
+        "\n",
+        "We count borrows from the transactions table. \"\"\"\n",
+        "\n",
+        "\n",
+        "\n",
+        "borrow_counts  = df_t.groupby('Member_ID')['Book_ID'].count()\n",
+        "print(borrow_counts)"
+      ],
+      "metadata": {
+        "id": "rkPQM8N5K_Vk"
+      },
+      "id": "rkPQM8N5K_Vk",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "\n",
+        "# STEP 1: Count borrows per member\n",
+        "borrow_counts = df_t.groupby(\"Member_ID\")[\"Book_ID\"].count()\n",
+        "\n",
+        "# STEP 2: Merge with members table\n",
+        "merged = df_m.merge(borrow_counts, on=\"Member_ID\", how=\"left\")\n",
+        "merged[\"Book_ID\"] = merged[\"Book_ID\"].fillna(0)\n",
+        "merged.rename(columns={\"Book_ID\": \"Borrow_Count\"}, inplace=True)\n",
+        "\n",
+        "# STEP 3: Most active members\n",
+        "most_active = merged.sort_values(\"Borrow_Count\", ascending=False).head(10)\n",
+        "\n",
+        "# STEP 4: Most inactive members\n",
+        "least_active = merged.sort_values(\"Borrow_Count\", ascending=True).head(10)\n",
+        "\n",
+        "# STEP 5: Categorize activity levels (optional)\n",
+        "def activity_level(x):\n",
+        "    if x >= 10:\n",
+        "        return \"Highly Active\"\n",
+        "    elif x >= 3:\n",
+        "        return \"Moderately Active\"\n",
+        "    else:\n",
+        "        return \"Inactive\"\n",
+        "\n",
+        "merged[\"Activity_Level\"] = merged[\"Borrow_Count\"].apply(activity_level)\n"
+      ],
+      "metadata": {
+        "id": "WKDnnaKDMQX8"
+      },
+      "id": "WKDnnaKDMQX8",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "merged"
+      ],
+      "metadata": {
+        "id": "ivoQnW2GOLXH"
+      },
+      "id": "ivoQnW2GOLXH",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "a3N1DDUcPAcb"
+      },
+      "id": "a3N1DDUcPAcb",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **Age Groups for Analysis:**"
+      ],
+      "metadata": {
+        "id": "EQBPkiZoPV3Y"
+      },
+      "id": "EQBPkiZoPV3Y"
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\"\"\"STEP 1 — Create Age Group Column\n",
+        "\n",
+        "Logic:\n",
+        "We want to assign each member to an age group based on their age.\n",
+        "Use simple conditional logic.\n",
+        "\n",
+        "- Teens (16-19): Mostly students\n",
+        "- Young Adults (20-29): Mix of students and working professionals\n",
+        "- Adults (30-49): Mostly regular and premium members\n",
+        "- Middle-aged (50-64): Mix of regular and faculty\n",
+        "- Seniors (65+): Senior membership category\n",
+        "\"\"\"\n",
+        "\n",
+        "\n",
+        "def get_age_groups(age):\n",
+        "  if 16 <= age <= 19 : return \"teens 16 - 19\"\n",
+        "  elif 20 <= age <= 29 : return \"young adults 20 -29\"\n",
+        "  elif 30 <= age <= 49 : return \"Adults 30 -49\"\n",
+        "  elif 50 <= age <= 64 : return \"Midlle aged 50 - 64\"\n",
+        "  else :\n",
+        "    return \"seniors (65+)\"\n",
+        "\n",
+        "\n",
+        "df_m[\"Age_Group\"]= df_m[\"Age\"].apply(get_age_groups)\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "Sbs9ORL1PZr-"
+      },
+      "id": "Sbs9ORL1PZr-",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "df_m"
+      ],
+      "metadata": {
+        "id": "iOIusJrVTxn4"
+      },
+      "id": "iOIusJrVTxn4",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\"\"\"STEP 2 — Count borrows per member\n",
+        "\n",
+        "Logic:\n",
+        "We need borrowing frequency from the transactions table.\"\"\"\n",
+        "\n",
+        "\n",
+        "borrow_count = df_t.groupby(\"Member_ID\")['Book_ID'].count()"
+      ],
+      "metadata": {
+        "id": "H51FtaxJT2gI"
+      },
+      "id": "H51FtaxJT2gI",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\"\"\"STEP 3 — Merge with members to attach age group to borrow count\n",
+        "\n",
+        "Logic:\n",
+        "Merge so we have both age group + borrow count in one table.\"\"\"\n",
+        "\n",
+        "merged = df_m.merge(borrow_count, on=\"Member_ID\", how=\"left\")\n",
+        "merged[\"Book_ID\"] = merged[\"Book_ID\"].fillna(0)\n",
+        "merged.rename(columns={\"Book_ID\": \"Borrow_Count\"}, inplace=True)\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "q6zrZS2RUTfr"
+      },
+      "id": "q6zrZS2RUTfr",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\"\"\" STEP 4 — Group by age group and calculate total & avg borrows\n",
+        "\n",
+        "Logic:\n",
+        "Now group by age group:\n",
+        "\n",
+        "Total borrows per group\n",
+        "\n",
+        "Average borrows per member per gro\"\"\"\n",
+        "\n",
+        "age_group_stats = merged.groupby(\"Age_Group\")[\"Borrow_Count\"].agg(Total_Borrows= \"sum\",Average_Borrows= \"mean\")\n",
+        "\n",
+        "age_group_stats\n"
+      ],
+      "metadata": {
+        "id": "YNJdFFPFUgAr"
+      },
+      "id": "YNJdFFPFUgAr",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\"\"\"STEP 5 — Rank age groups by activity\n",
+        "\n",
+        "Logic:\n",
+        "Sort to find most active → least active age groups.\"\"\"\n",
+        "\n",
+        "age_group_stats = age_group_stats.sort_values(\"Total_Borrows\", ascending=False)\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "EQHct6mFU8ps"
+      },
+      "id": "EQHct6mFU8ps",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "age_group_stats"
+      ],
+      "metadata": {
+        "id": "XiFZB4K0VN_u"
+      },
+      "id": "XiFZB4K0VN_u",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "X_9IotwbVPQu"
+      },
+      "id": "X_9IotwbVPQu",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# 3. **Overdue Analysis**\n"
+      ],
+      "metadata": {
+        "id": "ChgS2eZ0VXsR"
+      },
+      "id": "ChgS2eZ0VXsR"
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\"\"\"### 3. **Overdue Analysis**\n",
+        "\n",
+        "**Critical Metrics:**\n",
+        "- **Current overdue books**: 5 books are currently overdue (>30 days)\n",
+        "- **Unreturned books**: 5 books haven't been returned yet\n",
+        "- **Return patterns**: Average loan period analysis\n",
+        "- **Member reliability**: Which membership types return books on time?\n",
+        "\"\"\""
+      ],
+      "metadata": {
+        "id": "Zx_2MJymVZJO"
+      },
+      "id": "Zx_2MJymVZJO",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "df_t['Checkout_Date']"
+      ],
+      "metadata": {
+        "id": "5EEIaGG5Vg5_"
+      },
+      "id": "5EEIaGG5Vg5_",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "df_t['Checkout_Date']= pd.to_datetime(df_t['Checkout_Date'])\n",
+        "df_t[\"Return_Date\"] = pd.to_datetime(df_t[\"Return_Date\"])\n",
+        "df_t"
+      ],
+      "metadata": {
+        "id": "kBPG7dC2WQZS"
+      },
+      "id": "kBPG7dC2WQZS",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "today = pd.Timestamp.today()"
+      ],
+      "metadata": {
+        "id": "LWuDWwBUW2-1"
+      },
+      "id": "LWuDWwBUW2-1",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "today"
+      ],
+      "metadata": {
+        "id": "APvVh9lOW9k2"
+      },
+      "id": "APvVh9lOW9k2",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "df_t[\"Days_Borrowed\"] = (df_t[\"Return_Date\"].fillna(today) - df_t[\"Checkout_Date\"]).dt.days\n"
+      ],
+      "metadata": {
+        "id": "DoaZ0mcBXGnn"
+      },
+      "id": "DoaZ0mcBXGnn",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "df_"
+      ],
+      "metadata": {
+        "id": "Ns_7GCWaXoY5"
+      },
+      "id": "Ns_7GCWaXoY5",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "current_overdue = df_t[df_t[\"Days_Borrowed\"]>30]\n",
+        "\n",
+        "print(\"Currentlt overdue books : \")\n",
+        "(current_overdue)"
+      ],
+      "metadata": {
+        "id": "mI-azErFXsp5"
+      },
+      "id": "mI-azErFXsp5",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\"\"\"If Return_Date is NaN:\n",
+        "→ Book has never been returned\n",
+        "→ Fully unreturned.\"\"\"\n",
+        "\n",
+        "unreturned = df_t[df_t[\"Return_Date\"].isna()]\n",
+        "print(unreturned)\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "75sFIY9zYFJ8"
+      },
+      "id": "75sFIY9zYFJ8",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\"\"\"Only consider books that were returned.\n",
+        "\n",
+        "Compute:\n",
+        "\n",
+        "Return_Date - Checkout_Date in days\n",
+        "\n",
+        "Calculate average of these durations.\"\"\"\n",
+        "\n",
+        "returned = df_t[df_t[\"Return_Date\"].notna()]\n",
+        "returned[\"Loan_Duration\"] = (returned[\"Return_Date\"] - returned[\"Checkout_Date\"]).dt.days\n",
+        "\n",
+        "avg_loan_period = returned[\"Loan_Duration\"].mean()\n",
+        "print(\"Average loan duration:\", avg_loan_period)\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "6evpkf6RYbyN"
+      },
+      "id": "6evpkf6RYbyN",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# ember Reliability: Which Membership Types Return Books Faster?\n",
+        "\n",
+        "\n",
+        "# Merge transactions (df_t) with members (df_m) to get Membership_Type.\n",
+        "\n",
+        "# Only consider returned books:\n",
+        "\n",
+        "# compute loan duration.\n",
+        "\n",
+        "# Group by Membership_Type:\n",
+        "\n",
+        "# Calculate average return time.\n",
+        "\n",
+        "# Smaller average = more reliable member type.\n",
+        "\n",
+        "# Merge members with transactions\n",
+        "merged = df_t.merge(df_m[[\"Member_ID\", \"Membership_Type\"]], on=\"Member_ID\", how=\"left\")\n",
+        "\n",
+        "# Only returned books\n",
+        "returned = merged[merged[\"Return_Date\"].notna()]\n",
+        "returned[\"Loan_Duration\"] = (returned[\"Return_Date\"] - returned[\"Checkout_Date\"]).dt.days\n",
+        "\n",
+        "# Average return time by membership type\n",
+        "reliability = returned.groupby(\"Membership_Type\")[\"Loan_Duration\"].mean().sort_values()\n",
+        "\n",
+        "print(\"Member reliability ranking:\")\n",
+        "print(reliability)\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "YqTjsD2YYhn-"
+      },
+      "id": "YqTjsD2YYhn-",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "ITj2gkp4Y1Yg"
+      },
+      "id": "ITj2gkp4Y1Yg",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# 4. **Genre Preferences by Age Group**"
+      ],
+      "metadata": {
+        "id": "5SylXBpTZGCs"
+      },
+      "id": "5SylXBpTZGCs"
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\"\"\" **Expected Patterns (Built into Dataset):**\n",
+        "- **Teens (16-19)**: Education, Science, Technology, Fiction, Adventure\n",
+        "- **Young Adults (20-29)**: Business, Technology, Biography, Fiction, Self-Help\n",
+        "- **Adults (30-49)**: History, Biography, Business, Health, Philosophy\n",
+        "- **Middle-aged (50-64)**: History, Biography, Philosophy, Health, Travel\n",
+        "- **Seniors (65+)**: History, Biography, Philosophy, Religion, Art\"\"\""
+      ],
+      "metadata": {
+        "id": "jMOByKUSZHOA"
+      },
+      "id": "jMOByKUSZHOA",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "df_m"
+      ],
+      "metadata": {
+        "id": "smMpR_LOZJvh"
+      },
+      "id": "smMpR_LOZJvh",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "merged = df_t.merge(df_m[[\"Member_ID\", \"Age_Group\"]], on=\"Member_ID\", how=\"left\")\n",
+        "merged = merged.merge(df[[\"Book_ID\", \"Genre\"]], on=\"Book_ID\", how=\"left\")\n",
+        "\n",
+        "\n",
+        "genre_by_age = (\n",
+        "    merged.groupby([\"Age_Group\", \"Genre\"])\n",
+        "          .size()\n",
+        "          .reset_index(name=\"Borrow_Count\")\n",
+        "          .sort_values([\"Age_Group\", \"Borrow_Count\"], ascending=[True, False])\n",
+        ")\n"
+      ],
+      "metadata": {
+        "id": "Tv520LEwZMJy"
+      },
+      "id": "Tv520LEwZMJy",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "top_genres = genre_by_age.groupby(\"Age_Group\").head(5)  # top 5 genres per group\n",
+        "print(top_genres)\n"
+      ],
+      "metadata": {
+        "id": "pq7g2blfZSbC"
+      },
+      "id": "pq7g2blfZSbC",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "g_gTqvTtZboD"
+      },
+      "id": "g_gTqvTtZboD",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#5. **Library Utilization Optimization**"
+      ],
+      "metadata": {
+        "id": "NDjXIbq9c3Fi"
+      },
+      "id": "NDjXIbq9c3Fi"
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\"\"\"\n",
+        "### 5. **Library Utilization Optimization**\n",
+        "\n",
+        "**Resource Planning Questions:**\n",
+        "- Which books should be purchased in multiple copies?\n",
+        "- What genres are underrepresented in borrowing?\n",
+        "- When are peak borrowing periods?\n",
+        "- How can we improve member engagement?\n",
+        "\"\"\""
+      ],
+      "metadata": {
+        "id": "1_yvZNxKc4oo"
+      },
+      "id": "1_yvZNxKc4oo",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# - Which books should be purchased in multiple copies?\n",
+        "\n",
+        "book_demand = df_t[\"Book_ID\"].value_counts().reset_index()\n",
+        "book_demand.columns = [\"Book_ID\", \"Borrow_Count\"]\n",
+        "top_books = book_demand.head(10)\n",
+        "print(top_books)\n"
+      ],
+      "metadata": {
+        "id": "vhGFZrCUdADZ"
+      },
+      "id": "vhGFZrCUdADZ",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        " # What genres are underrepresented in borrowing?\n",
+        "\n",
+        " \"\"\"Approach:\n",
+        "\n",
+        "Merge books + transactions\n",
+        "\n",
+        "Group by genre\n",
+        "\n",
+        "Count how many times each genre is borrowed\n",
+        "\n",
+        "Sort from low → high\n",
+        "\n",
+        "Lowest genres = underutilized\"\"\"\n",
+        "\n",
+        "print(df_t)\n",
+        "print(df)\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "genre_usage = df_t.merge(df[[\"Book_ID\",\"Genre\"]],on = \"Book_ID\").groupby(\"Genre\").size().reset_index(name = \"Borrow_Count\").sort_values(\"Borrow_Count\")\n",
+        "\n",
+        "\n",
+        "print(genre_usage.head(10))"
+      ],
+      "metadata": {
+        "id": "ty_DN3UbdOHq"
+      },
+      "id": "ty_DN3UbdOHq",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# When are peak borrowing periods?\n",
+        "\n",
+        "\n",
+        "df_t[\"Checkout_Date\"] = pd.to_datetime(df_t[\"Checkout_Date\"])\n",
+        "df_t[\"Month\"] = df_t[\"Checkout_Date\"].dt.month\n",
+        "\n",
+        "monthly_trend = df_t.groupby(\"Month\").size()\n",
+        "print(monthly_trend)\n",
+        "\n",
+        "\n",
+        "df_t[\"DayOfWeek\"] = df_t[\"Checkout_Date\"].dt.day_name()\n",
+        "\n",
+        "weekly_trend = df_t.groupby(\"DayOfWeek\").size().sort_values(ascending=False)\n",
+        "print(weekly_trend)\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "0XXzwT2teBSv"
+      },
+      "id": "0XXzwT2teBSv",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# # 4. How can we improve member engagement?\n",
+        "# borrow_counts = df_t[\"Member_ID\"].value_counts().reset_index()\n",
+        "# borrow_counts.columns = [\"Member_ID\", \"Borrow_Count\"]\n",
+        "\n",
+        "# # Merge with member details\n",
+        "# members_activity = df_m.merge(borrow_counts, on=\"Member_ID\", how=\"left\")\n",
+        "# members_activity[\"Borrow_Count\"].fillna(0, inplace=True)\n"
+      ],
+      "metadata": {
+        "id": "WDVOhqNCfHOl"
+      },
+      "id": "WDVOhqNCfHOl",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# def segment(x):\n",
+        "#     if x >= 20:\n",
+        "#         return \"Heavy User\"\n",
+        "#     elif x >= 10:\n",
+        "#         return \"Regular User\"\n",
+        "#     elif x >= 5:\n",
+        "#         return \"Light User\"\n",
+        "#     else:\n",
+        "#         return \"Inactive User\"\n",
+        "\n",
+        "# members_activity[\"Segment\"] = members_activity[\"Borrow_Count\"].apply(segment)\n"
+      ],
+      "metadata": {
+        "id": "i5auxulZfQcn"
+      },
+      "id": "i5auxulZfQcn",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(df.columns)\n",
+        "print(df_t.columns)\n",
+        "print(df_m.columns)"
+      ],
+      "metadata": {
+        "id": "-pYT1QqbfSW3"
+      },
+      "id": "-pYT1QqbfSW3",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "C3OIM5qVnr8F"
+      },
+      "id": "C3OIM5qVnr8F"
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# # Step 1: Count total borrows per member\n",
+        "# member_counts = df_t.groupby('Member_ID').size().reset_index(name='Total_Borrows')\n",
+        "\n",
+        "# # Step 2: Define segmentation function\n",
+        "# def categorize_user(x):\n",
+        "#     if x > 20:\n",
+        "#         return \"Heavy User\"\n",
+        "#     elif 10 <= x <= 20:\n",
+        "#         return \"Regular User\"\n",
+        "#     elif 5 <= x <= 9:\n",
+        "#         return \"Light User\"\n",
+        "#     else:\n",
+        "#         return \"Inactive User\"\n",
+        "\n",
+        "# # Step 3: Apply segmentation\n",
+        "# member_counts['Category'] = member_counts['Total_Borrows'].apply(categorize_user)\n",
+        "\n",
+        "# # Step 4: View segmented members\n",
+        "# member_counts.head()\n"
+      ],
+      "metadata": {
+        "id": "hznTOiv0fqf5"
+      },
+      "id": "hznTOiv0fqf5",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Advanced Analysis Challenges"
+      ],
+      "metadata": {
+        "id": "4lR8jMmhE3gt"
+      },
+      "id": "4lR8jMmhE3gt"
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#**Challenge 1: Member Segmentation**"
+      ],
+      "metadata": {
+        "id": "hw_GoBtyF6Hr"
+      },
+      "id": "hw_GoBtyF6Hr"
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\"\"\"\n",
+        "\n",
+        "Create member categories based on borrowing behavior:\n",
+        "- **Heavy Users**: >20 books borrowed\n",
+        "- **Regular Users**: 10-20 books\n",
+        "- **Light Users**: 5-9 books\n",
+        "- **Inactive Users**: <5 books\n",
+        "\"\"\""
+      ],
+      "metadata": {
+        "id": "kyeZiLI_FapJ"
+      },
+      "id": "kyeZiLI_FapJ",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Step 1: Count total borrows per member\n",
+        "member_counts = df_t.groupby('Member_ID').size().reset_index(name='Total_Borrows')\n",
+        "\n",
+        "# Step 2: Define segmentation function\n",
+        "def categorize_user(x):\n",
+        "    if x > 20:\n",
+        "        return \"Heavy User\"\n",
+        "    elif 10 <= x <= 20:\n",
+        "        return \"Regular User\"\n",
+        "    elif 5 <= x < 10:\n",
+        "        return \"Light User\"\n",
+        "    else:\n",
+        "        return \"Inactive User\"\n",
+        "\n",
+        "# Step 3: Apply category\n",
+        "member_counts['User_Category'] = member_counts['Total_Borrows'].apply(categorize_user)\n",
+        "\n",
+        "# Step 4: Merge with member details to analyze demographics\n",
+        "member_segmentation = member_counts.merge(df_m, on='Member_ID', how='left')\n",
+        "\n",
+        "# View final segmented table\n",
+        "member_segmentation.head()\n"
+      ],
+      "metadata": {
+        "id": "8A_qiYCOnM5n"
+      },
+      "id": "8A_qiYCOnM5n",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **Challenge 2: Seasonal Trends**"
+      ],
+      "metadata": {
+        "id": "rdRsRaGjGA9j"
+      },
+      "id": "rdRsRaGjGA9j"
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\"\"\"\n",
+        "\n",
+        "Analyze borrowing patterns by:\n",
+        "- Month of the year\n",
+        "- Season (Academic calendar impact)\n",
+        "- Day of the week trends\n",
+        "\n",
+        "\"\"\""
+      ],
+      "metadata": {
+        "id": "zl8coo0dn0QK"
+      },
+      "id": "zl8coo0dn0QK",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\"\"\"\n",
+        "STEP 1 — Borrowing by Month\n",
+        "\n",
+        "Every checkout has a Checkout_Date\n",
+        "\n",
+        "Pandas can extract the month name or month number\n",
+        "\n",
+        "Group by the extracted month → count total borrows → plot \"\"\"\n",
+        "\n",
+        "\n",
+        "# ensure Checkout_date is datetime\n",
+        "df_t[\"Checkout_Date\"] = pd.to_datetime(df_t['Checkout_Date'])\n",
+        "\n",
+        "\n",
+        "#extract the month\n",
+        "\n",
+        "df_t['Month_Name'] = df_t['Checkout_Date'].dt.month_name()\n",
+        "\n",
+        "\n",
+        "\n",
+        "# group by month to count total borrows\n",
+        "\n",
+        "monthly_borrowing = df_t.groupby(\"Month_Name\").size().reset_index(name = \"Borrow_Count\")\n",
+        "\n",
+        "monthly_borrowing\n",
+        "\n",
+        "df_t"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 423
+        },
+        "id": "p4Luhrx7FVwO",
+        "outputId": "6b79ce3c-caa5-43d8-f55e-42ba2a3c600a"
+      },
+      "id": "p4Luhrx7FVwO",
+      "execution_count": 44,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "     Book_ID Member_ID Checkout_Date Return_Date Month_Name\n",
+              "0       B082      M259    2023-01-01         NaN    January\n",
+              "1       B322      M411    2023-01-01  2023-01-10    January\n",
+              "2       B388      M025    2023-01-01  2023-01-22    January\n",
+              "3       B253      M005    2023-01-01         NaN    January\n",
+              "4       B056      M358    2023-01-01         NaN    January\n",
+              "...      ...       ...           ...         ...        ...\n",
+              "6682    B073      M308    2024-11-06  2024-11-06   November\n",
+              "6683    B329      M119    2024-11-06         NaN   November\n",
+              "6684    B210      M384    2024-11-06  2024-11-06   November\n",
+              "6685    B181      M339    2024-11-06  2024-11-06   November\n",
+              "6686    B144      M312    2024-11-06  2024-11-06   November\n",
+              "\n",
+              "[6687 rows x 5 columns]"
+            ],
+            "text/html": [
+              "\n",
+              "  <div id=\"df-cec71479-a80d-4aa8-bfcd-b2b4b14a4703\" class=\"colab-df-container\">\n",
+              "    <div>\n",
+              "<style scoped>\n",
+              "    .dataframe tbody tr th:only-of-type {\n",
+              "        vertical-align: middle;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe tbody tr th {\n",
+              "        vertical-align: top;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe thead th {\n",
+              "        text-align: right;\n",
+              "    }\n",
+              "</style>\n",
+              "<table border=\"1\" class=\"dataframe\">\n",
+              "  <thead>\n",
+              "    <tr style=\"text-align: right;\">\n",
+              "      <th></th>\n",
+              "      <th>Book_ID</th>\n",
+              "      <th>Member_ID</th>\n",
+              "      <th>Checkout_Date</th>\n",
+              "      <th>Return_Date</th>\n",
+              "      <th>Month_Name</th>\n",
+              "    </tr>\n",
+              "  </thead>\n",
+              "  <tbody>\n",
+              "    <tr>\n",
+              "      <th>0</th>\n",
+              "      <td>B082</td>\n",
+              "      <td>M259</td>\n",
+              "      <td>2023-01-01</td>\n",
+              "      <td>NaN</td>\n",
+              "      <td>January</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>1</th>\n",
+              "      <td>B322</td>\n",
+              "      <td>M411</td>\n",
+              "      <td>2023-01-01</td>\n",
+              "      <td>2023-01-10</td>\n",
+              "      <td>January</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>2</th>\n",
+              "      <td>B388</td>\n",
+              "      <td>M025</td>\n",
+              "      <td>2023-01-01</td>\n",
+              "      <td>2023-01-22</td>\n",
+              "      <td>January</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>3</th>\n",
+              "      <td>B253</td>\n",
+              "      <td>M005</td>\n",
+              "      <td>2023-01-01</td>\n",
+              "      <td>NaN</td>\n",
+              "      <td>January</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>4</th>\n",
+              "      <td>B056</td>\n",
+              "      <td>M358</td>\n",
+              "      <td>2023-01-01</td>\n",
+              "      <td>NaN</td>\n",
+              "      <td>January</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>...</th>\n",
+              "      <td>...</td>\n",
+              "      <td>...</td>\n",
+              "      <td>...</td>\n",
+              "      <td>...</td>\n",
+              "      <td>...</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>6682</th>\n",
+              "      <td>B073</td>\n",
+              "      <td>M308</td>\n",
+              "      <td>2024-11-06</td>\n",
+              "      <td>2024-11-06</td>\n",
+              "      <td>November</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>6683</th>\n",
+              "      <td>B329</td>\n",
+              "      <td>M119</td>\n",
+              "      <td>2024-11-06</td>\n",
+              "      <td>NaN</td>\n",
+              "      <td>November</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>6684</th>\n",
+              "      <td>B210</td>\n",
+              "      <td>M384</td>\n",
+              "      <td>2024-11-06</td>\n",
+              "      <td>2024-11-06</td>\n",
+              "      <td>November</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>6685</th>\n",
+              "      <td>B181</td>\n",
+              "      <td>M339</td>\n",
+              "      <td>2024-11-06</td>\n",
+              "      <td>2024-11-06</td>\n",
+              "      <td>November</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>6686</th>\n",
+              "      <td>B144</td>\n",
+              "      <td>M312</td>\n",
+              "      <td>2024-11-06</td>\n",
+              "      <td>2024-11-06</td>\n",
+              "      <td>November</td>\n",
+              "    </tr>\n",
+              "  </tbody>\n",
+              "</table>\n",
+              "<p>6687 rows × 5 columns</p>\n",
+              "</div>\n",
+              "    <div class=\"colab-df-buttons\">\n",
+              "\n",
+              "  <div class=\"colab-df-container\">\n",
+              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-cec71479-a80d-4aa8-bfcd-b2b4b14a4703')\"\n",
+              "            title=\"Convert this dataframe to an interactive table.\"\n",
+              "            style=\"display:none;\">\n",
+              "\n",
+              "  <svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24px\" viewBox=\"0 -960 960 960\">\n",
+              "    <path d=\"M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z\"/>\n",
+              "  </svg>\n",
+              "    </button>\n",
+              "\n",
+              "  <style>\n",
+              "    .colab-df-container {\n",
+              "      display:flex;\n",
+              "      gap: 12px;\n",
+              "    }\n",
+              "\n",
+              "    .colab-df-convert {\n",
+              "      background-color: #E8F0FE;\n",
+              "      border: none;\n",
+              "      border-radius: 50%;\n",
+              "      cursor: pointer;\n",
+              "      display: none;\n",
+              "      fill: #1967D2;\n",
+              "      height: 32px;\n",
+              "      padding: 0 0 0 0;\n",
+              "      width: 32px;\n",
+              "    }\n",
+              "\n",
+              "    .colab-df-convert:hover {\n",
+              "      background-color: #E2EBFA;\n",
+              "      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);\n",
+              "      fill: #174EA6;\n",
+              "    }\n",
+              "\n",
+              "    .colab-df-buttons div {\n",
+              "      margin-bottom: 4px;\n",
+              "    }\n",
+              "\n",
+              "    [theme=dark] .colab-df-convert {\n",
+              "      background-color: #3B4455;\n",
+              "      fill: #D2E3FC;\n",
+              "    }\n",
+              "\n",
+              "    [theme=dark] .colab-df-convert:hover {\n",
+              "      background-color: #434B5C;\n",
+              "      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);\n",
+              "      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));\n",
+              "      fill: #FFFFFF;\n",
+              "    }\n",
+              "  </style>\n",
+              "\n",
+              "    <script>\n",
+              "      const buttonEl =\n",
+              "        document.querySelector('#df-cec71479-a80d-4aa8-bfcd-b2b4b14a4703 button.colab-df-convert');\n",
+              "      buttonEl.style.display =\n",
+              "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
+              "\n",
+              "      async function convertToInteractive(key) {\n",
+              "        const element = document.querySelector('#df-cec71479-a80d-4aa8-bfcd-b2b4b14a4703');\n",
+              "        const dataTable =\n",
+              "          await google.colab.kernel.invokeFunction('convertToInteractive',\n",
+              "                                                    [key], {});\n",
+              "        if (!dataTable) return;\n",
+              "\n",
+              "        const docLinkHtml = 'Like what you see? Visit the ' +\n",
+              "          '<a target=\"_blank\" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'\n",
+              "          + ' to learn more about interactive tables.';\n",
+              "        element.innerHTML = '';\n",
+              "        dataTable['output_type'] = 'display_data';\n",
+              "        await google.colab.output.renderOutput(dataTable, element);\n",
+              "        const docLink = document.createElement('div');\n",
+              "        docLink.innerHTML = docLinkHtml;\n",
+              "        element.appendChild(docLink);\n",
+              "      }\n",
+              "    </script>\n",
+              "  </div>\n",
+              "\n",
+              "\n",
+              "    <div id=\"df-00a68198-7bd3-4a88-8db9-13f1a143841c\">\n",
+              "      <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-00a68198-7bd3-4a88-8db9-13f1a143841c')\"\n",
+              "                title=\"Suggest charts\"\n",
+              "                style=\"display:none;\">\n",
+              "\n",
+              "<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24px\"viewBox=\"0 0 24 24\"\n",
+              "     width=\"24px\">\n",
+              "    <g>\n",
+              "        <path d=\"M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z\"/>\n",
+              "    </g>\n",
+              "</svg>\n",
+              "      </button>\n",
+              "\n",
+              "<style>\n",
+              "  .colab-df-quickchart {\n",
+              "      --bg-color: #E8F0FE;\n",
+              "      --fill-color: #1967D2;\n",
+              "      --hover-bg-color: #E2EBFA;\n",
+              "      --hover-fill-color: #174EA6;\n",
+              "      --disabled-fill-color: #AAA;\n",
+              "      --disabled-bg-color: #DDD;\n",
+              "  }\n",
+              "\n",
+              "  [theme=dark] .colab-df-quickchart {\n",
+              "      --bg-color: #3B4455;\n",
+              "      --fill-color: #D2E3FC;\n",
+              "      --hover-bg-color: #434B5C;\n",
+              "      --hover-fill-color: #FFFFFF;\n",
+              "      --disabled-bg-color: #3B4455;\n",
+              "      --disabled-fill-color: #666;\n",
+              "  }\n",
+              "\n",
+              "  .colab-df-quickchart {\n",
+              "    background-color: var(--bg-color);\n",
+              "    border: none;\n",
+              "    border-radius: 50%;\n",
+              "    cursor: pointer;\n",
+              "    display: none;\n",
+              "    fill: var(--fill-color);\n",
+              "    height: 32px;\n",
+              "    padding: 0;\n",
+              "    width: 32px;\n",
+              "  }\n",
+              "\n",
+              "  .colab-df-quickchart:hover {\n",
+              "    background-color: var(--hover-bg-color);\n",
+              "    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);\n",
+              "    fill: var(--button-hover-fill-color);\n",
+              "  }\n",
+              "\n",
+              "  .colab-df-quickchart-complete:disabled,\n",
+              "  .colab-df-quickchart-complete:disabled:hover {\n",
+              "    background-color: var(--disabled-bg-color);\n",
+              "    fill: var(--disabled-fill-color);\n",
+              "    box-shadow: none;\n",
+              "  }\n",
+              "\n",
+              "  .colab-df-spinner {\n",
+              "    border: 2px solid var(--fill-color);\n",
+              "    border-color: transparent;\n",
+              "    border-bottom-color: var(--fill-color);\n",
+              "    animation:\n",
+              "      spin 1s steps(1) infinite;\n",
+              "  }\n",
+              "\n",
+              "  @keyframes spin {\n",
+              "    0% {\n",
+              "      border-color: transparent;\n",
+              "      border-bottom-color: var(--fill-color);\n",
+              "      border-left-color: var(--fill-color);\n",
+              "    }\n",
+              "    20% {\n",
+              "      border-color: transparent;\n",
+              "      border-left-color: var(--fill-color);\n",
+              "      border-top-color: var(--fill-color);\n",
+              "    }\n",
+              "    30% {\n",
+              "      border-color: transparent;\n",
+              "      border-left-color: var(--fill-color);\n",
+              "      border-top-color: var(--fill-color);\n",
+              "      border-right-color: var(--fill-color);\n",
+              "    }\n",
+              "    40% {\n",
+              "      border-color: transparent;\n",
+              "      border-right-color: var(--fill-color);\n",
+              "      border-top-color: var(--fill-color);\n",
+              "    }\n",
+              "    60% {\n",
+              "      border-color: transparent;\n",
+              "      border-right-color: var(--fill-color);\n",
+              "    }\n",
+              "    80% {\n",
+              "      border-color: transparent;\n",
+              "      border-right-color: var(--fill-color);\n",
+              "      border-bottom-color: var(--fill-color);\n",
+              "    }\n",
+              "    90% {\n",
+              "      border-color: transparent;\n",
+              "      border-bottom-color: var(--fill-color);\n",
+              "    }\n",
+              "  }\n",
+              "</style>\n",
+              "\n",
+              "      <script>\n",
+              "        async function quickchart(key) {\n",
+              "          const quickchartButtonEl =\n",
+              "            document.querySelector('#' + key + ' button');\n",
+              "          quickchartButtonEl.disabled = true;  // To prevent multiple clicks.\n",
+              "          quickchartButtonEl.classList.add('colab-df-spinner');\n",
+              "          try {\n",
+              "            const charts = await google.colab.kernel.invokeFunction(\n",
+              "                'suggestCharts', [key], {});\n",
+              "          } catch (error) {\n",
+              "            console.error('Error during call to suggestCharts:', error);\n",
+              "          }\n",
+              "          quickchartButtonEl.classList.remove('colab-df-spinner');\n",
+              "          quickchartButtonEl.classList.add('colab-df-quickchart-complete');\n",
+              "        }\n",
+              "        (() => {\n",
+              "          let quickchartButtonEl =\n",
+              "            document.querySelector('#df-00a68198-7bd3-4a88-8db9-13f1a143841c button');\n",
+              "          quickchartButtonEl.style.display =\n",
+              "            google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
+              "        })();\n",
+              "      </script>\n",
+              "    </div>\n",
+              "\n",
+              "  <div id=\"id_a853f341-40e1-46c7-b189-b189b331be01\">\n",
+              "    <style>\n",
+              "      .colab-df-generate {\n",
+              "        background-color: #E8F0FE;\n",
+              "        border: none;\n",
+              "        border-radius: 50%;\n",
+              "        cursor: pointer;\n",
+              "        display: none;\n",
+              "        fill: #1967D2;\n",
+              "        height: 32px;\n",
+              "        padding: 0 0 0 0;\n",
+              "        width: 32px;\n",
+              "      }\n",
+              "\n",
+              "      .colab-df-generate:hover {\n",
+              "        background-color: #E2EBFA;\n",
+              "        box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);\n",
+              "        fill: #174EA6;\n",
+              "      }\n",
+              "\n",
+              "      [theme=dark] .colab-df-generate {\n",
+              "        background-color: #3B4455;\n",
+              "        fill: #D2E3FC;\n",
+              "      }\n",
+              "\n",
+              "      [theme=dark] .colab-df-generate:hover {\n",
+              "        background-color: #434B5C;\n",
+              "        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);\n",
+              "        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));\n",
+              "        fill: #FFFFFF;\n",
+              "      }\n",
+              "    </style>\n",
+              "    <button class=\"colab-df-generate\" onclick=\"generateWithVariable('df_t')\"\n",
+              "            title=\"Generate code using this dataframe.\"\n",
+              "            style=\"display:none;\">\n",
+              "\n",
+              "  <svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24px\"viewBox=\"0 0 24 24\"\n",
+              "       width=\"24px\">\n",
+              "    <path d=\"M7,19H8.4L18.45,9,17,7.55,7,17.6ZM5,21V16.75L18.45,3.32a2,2,0,0,1,2.83,0l1.4,1.43a1.91,1.91,0,0,1,.58,1.4,1.91,1.91,0,0,1-.58,1.4L9.25,21ZM18.45,9,17,7.55Zm-12,3A5.31,5.31,0,0,0,4.9,8.1,5.31,5.31,0,0,0,1,6.5,5.31,5.31,0,0,0,4.9,4.9,5.31,5.31,0,0,0,6.5,1,5.31,5.31,0,0,0,8.1,4.9,5.31,5.31,0,0,0,12,6.5,5.46,5.46,0,0,0,6.5,12Z\"/>\n",
+              "  </svg>\n",
+              "    </button>\n",
+              "    <script>\n",
+              "      (() => {\n",
+              "      const buttonEl =\n",
+              "        document.querySelector('#id_a853f341-40e1-46c7-b189-b189b331be01 button.colab-df-generate');\n",
+              "      buttonEl.style.display =\n",
+              "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
+              "\n",
+              "      buttonEl.onclick = () => {\n",
+              "        google.colab.notebook.generateWithVariable('df_t');\n",
+              "      }\n",
+              "      })();\n",
+              "    </script>\n",
+              "  </div>\n",
+              "\n",
+              "    </div>\n",
+              "  </div>\n"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "dataframe",
+              "variable_name": "df_t",
+              "summary": "{\n  \"name\": \"df_t\",\n  \"rows\": 6687,\n  \"fields\": [\n    {\n      \"column\": \"Book_ID\",\n      \"properties\": {\n        \"dtype\": \"category\",\n        \"num_unique_values\": 495,\n        \"samples\": [\n          \"B457\",\n          \"B222\",\n          \"B404\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"Member_ID\",\n      \"properties\": {\n        \"dtype\": \"category\",\n        \"num_unique_values\": 500,\n        \"samples\": [\n          \"M216\",\n          \"M107\",\n          \"M143\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"Checkout_Date\",\n      \"properties\": {\n        \"dtype\": \"date\",\n        \"min\": \"2023-01-01 00:00:00\",\n        \"max\": \"2024-11-06 00:00:00\",\n        \"num_unique_values\": 676,\n        \"samples\": [\n          \"2024-10-03 00:00:00\",\n          \"2023-10-30 00:00:00\",\n          \"2024-01-05 00:00:00\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"Return_Date\",\n      \"properties\": {\n        \"dtype\": \"date\",\n        \"min\": \"2023-01-02 00:00:00\",\n        \"max\": \"2024-11-20 00:00:00\",\n        \"num_unique_values\": 672,\n        \"samples\": [\n          \"2023-12-26\",\n          \"2023-06-05\",\n          \"2024-05-09\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"Month_Name\",\n      \"properties\": {\n        \"dtype\": \"category\",\n        \"num_unique_values\": 12,\n        \"samples\": [\n          \"November\",\n          \"October\",\n          \"January\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    }\n  ]\n}"
+            }
+          },
+          "metadata": {},
+          "execution_count": 44
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "6holIMGrGbDX"
+      },
+      "id": "6holIMGrGbDX",
+      "execution_count": 44,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **Challenge 3: Predictive Analysis**"
+      ],
+      "metadata": {
+        "id": "zJ3WNnmUyXWb"
+      },
+      "id": "zJ3WNnmUyXWb"
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **Challenge 4: Collection Management**"
+      ],
+      "metadata": {
+        "id": "F97wEsE7zWsE"
+      },
+      "id": "F97wEsE7zWsE"
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "### Challenge 4: Collection Management"
+      ],
+      "metadata": {
+        "id": "NEHSRO3_yXNj"
+      },
+      "id": "NEHSRO3_yXNj",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "7NU6pA-455mO"
+      },
+      "id": "7NU6pA-455mO",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "fkDdA-nA55jm"
+      },
+      "id": "fkDdA-nA55jm",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num = [10,20,3,5,12,4]\n",
+        "\n",
+        "\n",
+        "\n",
+        "for i in range(len(num)):\n",
+        "  for j in range(len(num)-1):\n",
+        "    if num[j] > num[j+1]:\n",
+        "      num[j], num[j+1] = num[j+1] , num[j]\n",
+        "\n",
+        "result = num\n",
+        "\n",
+        "print(result)\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "def avg_even(num):\n",
+        "  even_sum = 0\n",
+        "  even_count = 0\n",
+        "  for i in num:\n",
+        "    if i %2 == 0 :\n",
+        "      even_sum = even_sum + i\n",
+        "      even_count += 1\n",
+        "  if even_count > 0 :\n",
+        "    res = even_sum / even_count\n",
+        "    print(f\"Average number:{res}\")\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "print(avg_even(result))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "H6_7Qlav55g3",
+        "outputId": "6bfa5f74-4936-48e7-d3d7-c7dd89668152"
+      },
+      "id": "H6_7Qlav55g3",
+      "execution_count": 47,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[3, 4, 5, 10, 12, 20]\n",
+            "Average number:11.5\n",
+            "None\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "bvO11ShFGay2"
+      },
+      "id": "bvO11ShFGay2"
     }
   ],
   "metadata": {
