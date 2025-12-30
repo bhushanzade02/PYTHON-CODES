@@ -1,0 +1,153 @@
+BEGIN:VCALENDAR
+METHOD:REQUEST
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:India Standard Time
+BEGIN:STANDARD
+DTSTART:16010101T000000
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T000000
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN="M, Swathi":mailto:Swathi.M1@fnf.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=nghumare57
+ 0@gmail.com:mailto:nghumare570@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=hemantmane
+ 007@gmail.com:mailto:hemantmane007@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=ritikasurv
+ e13@gmail.com:mailto:ritikasurve13@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=kshitiz041
+ 0@gmail.com:mailto:kshitiz0410@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=kothawadet
+ s@gmail.com:mailto:kothawadets@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=sfirdous04
+ 04@gmail.com:mailto:sfirdous0404@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=bhushanzad
+ e02@gmail.com:mailto:bhushanzade02@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=arshjeetba
+ rkade8@gmail.com:mailto:arshjeetbarkade8@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=shelkepriy
+ anka9999@gmail.com:mailto:shelkepriyanka9999@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=kirtifate1
+ 1@gmail.com:mailto:kirtifate11@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=atharva.sh
+ eelwant@mitwpu.edu.in:mailto:atharva.sheelwant@mitwpu.edu.in
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=anuragsakh
+ are9960@gmail.com:mailto:anuragsakhare9960@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=yogeshdhum
+ al092025@gmail.com:mailto:yogeshdhumal092025@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=shubhamgai
+ kwad2710@gmail.com:mailto:shubhamgaikwad2710@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=sawarkarsa
+ ndip@gmail.com:mailto:sawarkarsandip@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=prerana020
+ 52000@gmail.com:mailto:prerana02052000@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=sonawanean
+ ushka1@gmail.com:mailto:sonawaneanushka1@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=aalokdhekn
+ e@gmail.com:mailto:aalokdhekne@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=patilaksha
+ y21103@gmail.com:mailto:patilakshay21103@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=amitddhuma
+ l@gmail.com:mailto:amitddhumal@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=bhendearya
+ n11@gmail.com:mailto:bhendearyan11@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=gaikwadar2
+ 001@gmail.com:mailto:gaikwadar2001@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=tanmaylona
+ re18@gmail.com:mailto:tanmaylonare18@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=kartikvyaw
+ ahare2523@gmail.com:mailto:kartikvyawahare2523@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=vsaditya19
+ 99@gmail.com:mailto:vsaditya1999@gmail.com
+ATTENDEE;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN="Bhat, Seem
+ a":mailto:Seema.Bhat@fnf.com
+ATTENDEE;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=Bhushan Za
+ de:mailto:bhushanzade02@hotmail.com
+DESCRIPTION;LANGUAGE=en-US:Hello All\,\n\nGreetings!\n\nBlocking your calen
+ dar for “Online Test” with FNF India.\n\nDate:15th December 2025\nTime
+ : 6:00 PM\n\nBelow are the few points to be followed while attending test:
+ \n\n* Ensure that you have a stable internet connection.\n* Please make yo
+ urselves available in isolated room while attending written test.\n* Candi
+ date will be considered as disqualified if he/ She fails to switch ON came
+ ra while attending Written Test.\n* Please login 5 minutes prior to the sc
+ hedule time.\n* Kindly use Laptop or desktop to appear for the test\n\n\n\
+ n\n\nAll The best !!!\n\n\n\n_____________________________________________
+ ___________________________________\n\nMicrosoft Teams meeting\n\nJoin: ht
+ tps://teams.microsoft.com/meet/21181064294126?p=YHBXDGq4Z2TEQRERlO\n\nMeet
+ ing ID: 211 810 642 941 26\n\nPasscode: Bv23pE9V\n\n______________________
+ __________\n\nNeed help?<https://aka.ms/JoinTeamsMeeting?omkt=en-US> | <ht
+ tps://teams.microsoft.com/l/meetup-join/19%3ameeting_OTU5OTM3MDUtNzFiNS00M
+ WU1LWI1NGUtMjk4NDQ3Y2M2ZTVi%40thread.v2/0?context=%7b%22Tid%22%3a%228a807b
+ 9b-02da-47f3-a903-791a42a2285c%22%2c%22Oid%22%3a%223a5ebc0e-3d64-4eed-b544
+ -dc05ee8d99ed%22%7d> System reference<https://teams.microsoft.com/l/meetup
+ -join/19%3ameeting_OTU5OTM3MDUtNzFiNS00MWU1LWI1NGUtMjk4NDQ3Y2M2ZTVi%40thre
+ ad.v2/0?context=%7b%22Tid%22%3a%228a807b9b-02da-47f3-a903-791a42a2285c%22%
+ 2c%22Oid%22%3a%223a5ebc0e-3d64-4eed-b544-dc05ee8d99ed%22%7d>\n\nDial in by
+  phone\n\n+1 904-348-0246\,\,6160635#<tel:+19043480246\,\,6160635> United 
+ States\, Jacksonville\n\nFind a local number<https://dialin.teams.microsof
+ t.com/822dd95b-e6b5-4a2d-b5d0-c97253d476b2?id=6160635>\n\nPhone conference
+  ID: 616 063 5#\n\nFor organizers: Meeting options<https://teams.microsoft
+ .com/meetingOptions/?organizerId=3a5ebc0e-3d64-4eed-b544-dc05ee8d99ed&tena
+ ntId=8a807b9b-02da-47f3-a903-791a42a2285c&threadId=19_meeting_OTU5OTM3MDUt
+ NzFiNS00MWU1LWI1NGUtMjk4NDQ3Y2M2ZTVi@thread.v2&messageId=0&language=en-US>
+  | <https://dialin.teams.microsoft.com/usp/pstnconferencing> Reset dial-in
+  PIN<https://dialin.teams.microsoft.com/usp/pstnconferencing>\n\nThe Confe
+ rence ID is dynamic and will be generated with each new Teams meeting crea
+ ted.\n\nOrg help<https://fnf.service-now.com/> | <https://www.fnf.com/priv
+ acy> Privacy and security<https://www.fnf.com/privacy>\n\n________________
+ ________________________________________________________________\n\n\n\n__
+ ______________________________\nNOTICE: The information contained in this 
+ message is proprietary and/or confidential and may be privileged. If you a
+ re not the intended recipient of this communication\, you are hereby notif
+ ied to: (i) delete the message and all copies\; (ii) do not disclose\, dis
+ tribute or use the message in any manner\; and (iii) notify the sender imm
+ ediately.\n
+UID:040000008200E00074C5B7101A82E00800000000902427DED569DC01000000000000000
+ 0100000003CFCEB3D90DEC049811636F4DEB736B0
+SUMMARY;LANGUAGE=en-US:Online Test - Data Science Internship Program
+DTSTART;TZID=India Standard Time:20251216T180000
+DTEND;TZID=India Standard Time:20251216T190000
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20251215T130031Z
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+SEQUENCE:3
+LOCATION;LANGUAGE=en-US:Microsoft Teams Meeting
+X-MICROSOFT-CDO-APPT-SEQUENCE:3
+X-MICROSOFT-CDO-OWNERAPPTID:0
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-ALLDAYEVENT:FALSE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-ONLINEMEETINGINFORMATION:{"OnlineMeetingChannelId":null\,"Onlin
+ eMeetingProvider":3}
+X-MICROSOFT-SKYPETEAMSMEETINGURL:https://teams.microsoft.com/l/meetup-join/
+ 19%3ameeting_OTU5OTM3MDUtNzFiNS00MWU1LWI1NGUtMjk4NDQ3Y2M2ZTVi%40thread.v2/
+ 0?context=%7b%22Tid%22%3a%228a807b9b-02da-47f3-a903-791a42a2285c%22%2c%22O
+ id%22%3a%223a5ebc0e-3d64-4eed-b544-dc05ee8d99ed%22%7d
+X-MICROSOFT-SCHEDULINGSERVICEUPDATEURL:https://dogfood-api.scheduler.teams.
+ microsoft.com/teams/8a807b9b-02da-47f3-a903-791a42a2285c/3a5ebc0e-3d64-4ee
+ d-b544-dc05ee8d99ed/19_meeting_OTU5OTM3MDUtNzFiNS00MWU1LWI1NGUtMjk4NDQ3Y2M
+ 2ZTVi@thread.v2/0
+X-MICROSOFT-SKYPETEAMSPROPERTIES:{"cid":"19:meeting_OTU5OTM3MDUtNzFiNS00MWU
+ 1LWI1NGUtMjk4NDQ3Y2M2ZTVi@thread.v2"\,"private":true\,"type":0\,"mid":0\,"
+ rid":0\,"uid":null}
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-REQUESTEDATTENDANCEMODE:DEFAULT
+X-MICROSOFT-ISRESPONSEREQUESTED:TRUE
+X-MICROSOFT-LOCATIONS:[ { "DisplayName" : "Microsoft Teams Meeting"\, "Loca
+ tionAnnotation" : ""\, "LocationSource" : 0\, "Unresolved" : false\, "Loca
+ tionUri" : "" } ]
+END:VEVENT
+END:VCALENDAR
